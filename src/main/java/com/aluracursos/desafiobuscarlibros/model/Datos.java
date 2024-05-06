@@ -8,6 +8,5 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record DatosLibros(
-        @JsonAlias("count") Integer cuenta,
         @JsonAlias("results") List<DatosLibroBuscado> libros) {
 }
